@@ -24,33 +24,34 @@ body {
 
 .navigation {
     position: fixed;
-    margin: 20px;
-    top: 0px;
-    display: flex;
-    justify-content: space-between;
-
+    top: 10px;
+    display: grid;
+    grid-template-columns: 3;
 
 }
 
 
 .logo{
-    display: inline-block;
-    max-height: 60px;
+    max-height: 100px;
+    grid-column-start: 1;
+    justify-self: start;
 }
 
 nav {
-    margin-right: 10px;
-    font-size: 20px;
+    font-size: 50px;
+    grid-column-start: 2;
+    justify-self: flex-end;
+    align-self: center;
 }
 
 nav ul li {
     display: inline-block;
     margin-left: 25px;
-    text-align: center;
+    text-align: space-evenly;    
 }
 
 nav a {
-    color:#3d3d3d;
+    color:#000000;
     text-decoration: none;
 }
 
@@ -116,9 +117,10 @@ footer h2 {
 
 
 /* Tablets - change with larger screen */
-/* @media screen and (min-width: 800px) {
-    .main-image {
-         height: 600px;
+/* @media only screen and (max-width: 400px) {
+    nav {
+        font-size: 20px;
+        color: white;
     }
    
   } */
