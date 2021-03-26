@@ -1,116 +1,42 @@
-/* * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-} */
 
-/* body {
-    background-color: rgb(255, 255, 255);
-} */
+:root {
+  --primary: rgb(203, 205, 202);
+}
+
 body {
     font-family: Comfortaa, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.main-image{
-    background-image: url("../images/schoolhouse.jpeg");
-    min-height: 3000px;
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* Needed to position the navbar */
-    position: relative;
+nav{
+  background-color: var(--primary);
+}
+
+main{
+  background-color: green;
+}
+
+#about-me{
+  background-color: teal;
+}
+
+#projects{
+  background-color: orange;
+}
+
+#contact-me{
+  background-color: red;
+}
+footer{
+  background-color: var(--primary);
+}
+
+@media screen and (min-width: 768px) {
+  #about-me {
+    background-color: purple;
   }
-
-.navigation {
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    top: 25px;
 }
-
-nav {
-    font-size: 20px;
-
-}
-
-.logo{
-    float: left;
-    max-height: 100px;
-}
-
-nav ul li {
-    float: right;
-    display: inline-block;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 30px;
-
-}
-
-nav a {
-    color:#000000;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #d9dcd6;
-    transition: color .75s ease;
+@media screen and (min-width: 480px) { 
+  #projects{
+    background-color: aqua;
   }
-
-p {
-    font-size: 16px;
 }
-
-/*paralax scrolling */
-/* 
-.container {
-    position: relative;
-} */
-
-
-/* 
-  .overlay {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: black;
-    opacity: 85%;
-    overflow: hidden;
-    width: 100%;
-    height:0;
-    transition: .5s ease;
-  }
-  
-  .container:hover .overlay {
-    position: absolute;
-    bottom: 0;
-    height: 100%;
-  }
-  
-  .text {
-    font-family: Comfortaa, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    font-size: 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  } */
-
-
-footer {
-    padding: 30px;
-    clear: both;
-    text-align: center;
-}
-
-footer h2 {
-    font-size: 20px;
-}
-
-
