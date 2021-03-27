@@ -2,15 +2,18 @@
   box-sizing: border-box;
 }
 
+/* DEFINING COLOR VARIABLES SO THE BACKGROUND GRADIENT ONLY NEEDS TO CHANGE IN ONE SPOT */
 :root {
   --primary: rgb(203, 205, 202);
   --secondary: rgba(13,13,13,1);
 }
 
+/* DEFINING FONTS */
 body {
     font-family: Comfortaa, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* ESTABLISH SIZES FOR DIFFERENT HEADINGS */
 h1{
   font-size: 45px;
 }
@@ -23,7 +26,7 @@ h3 {
   font-size: 20px;
 }
 
-
+/* SIZE HEADING */
 header {
   background-color: var(--primary);
   width: 100%;
@@ -31,12 +34,14 @@ header {
   
 }
 
+/* MOVING LOGO TO LEFT */
 header div img {
   float: left;
   max-height: 100px;
   
 }
 
+/* MOVING NAVIGATION TO RIGHT */
 header nav ul li a {
   float: right;
   padding: 0px 25px;
@@ -47,15 +52,14 @@ header nav ul li a {
   color: black;
   
 }
+
+/* CREATING HOVER STYLE FOR THE NAVIGATION BAR */
 header nav ul li a:hover {
   color: grey;
   transition: color 0.5s ease;
 }
 
-main{
-  background-color: green;
-}
-
+/* COLOR AND FLEX ABOUT ME SECTION */
 #about-me{
   background: rgb(13,13,13);
   background: linear-gradient(0deg, var(--secondary) 0%, var(--primary) 100%);
@@ -64,17 +68,18 @@ main{
   padding: 40px;
 }
 
-/* Left Column*/
+/* LEFT SECTION*/
 .column1 {
   flex: 1; 
 }
 
-/* Right Column*/
+/* RIGHT COLUMN*/
 .column2 {
   flex: 1;
   text-align: center;
 }
 
+/* SIZE AND CENTER PORTRAIT */
 .column2 img{
   margin-left: auto;
   margin-right: auto;
@@ -82,6 +87,7 @@ main{
   padding: 5px;
 }
 
+/* COLOR WORK SECTION */
 #work {
   background: rgb(13,13,13);
   background: linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
@@ -89,6 +95,7 @@ main{
   color: white;
 }
 
+/* FLEX AND SIZE CONTAINER FOR PROJECT CARDS */
 .allproj {
   flex: 3;
   display: flex;
@@ -97,6 +104,7 @@ main{
   color: black;
   margin: 15px;
 }
+/* COLOR AND STYLE PROJECT CARDS TO MATCH. DEFINE FLEX VALUES */
 .projectcard {
   background-color: white;
   border: solid;
@@ -105,6 +113,7 @@ main{
   flex: 0 0 400px;
 }
 
+/* STYLIZE HEADERS FOR POSTCARDS */
 .projectcard h2 {
   border: solid;
   border-radius: 15px;
@@ -112,6 +121,7 @@ main{
   padding:5%;
 }
 
+/* STYLIZE IMAGES INSIDE OF EACH CARD DIFFERENTLY PER CRITERIA */
 .projectcard.p1 img{
   width: 70%;
   padding: 15px;
@@ -119,12 +129,12 @@ main{
 }
 
 .projectcard.p2 img{
-  height: 200px;
+  height: 100px;
   padding: 15px;
 }
 
 .projectcard.p3 img{
-  width: 50%;
+  width: 40%;
   padding: 15px;
 }
 
@@ -138,6 +148,7 @@ main{
   background: linear-gradient(0deg, var(--secondary) 0%, var(--primary) 100%);
   padding: 40px;
 }
+
 footer{
   background-color: var(--secondary);
   color: white;
@@ -145,7 +156,7 @@ footer{
   padding: 100px;
 }
 
-
+/* MEDIA QUERY TO MAKE ALL FLEXBOXES COLUMNS WHEN PAGE IS SHRUNK */
 @media (max-width: 600px) {
   #about-me {
     flex-direction: column;
