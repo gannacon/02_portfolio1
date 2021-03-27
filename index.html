@@ -3,46 +3,98 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Connor Gannaway Portfolio</title>
 </head>
 
 <body>
-    <nav>
-        <h1> Connor Gannaway</h1>
+    <header>
+        <div>
+          <img src="./assets/images/me.png" alt="CG LOGO">
+        </div>
+        <nav>
         <ul>
-            <li><a href="#aaboutme">About Me</a></li>
-            <li><a href="#aprojects">Projects</a></li>
-
-            <li><a href="#acontactme">Contact Me</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about-me">About Me</a></li>
         </ul>
-    </nav>
+        </nav>  
+    </header>
+    
     <main>
         <section id="about-me">
-            <h2 href=#aboutme>
-                <a id="aaboutme">About Me</a>
-            </h2>
-            <!-- <img src="./assets/images/portrait.jpg" alt="Portrait of Connor"> -->
-            <p>
-                Hello! My name is Connor and I do stuff.
-            </p>
+            <div class="column1">
+                <h1>
+                    About Me
+                </h1>
+                <br>
+                <p>
+                Hello! My name is Connor Gannaway. I'm and engineer, photographer, and web designer from Kansas city Kansas.
+                Please browse my portfolio below and feel free to contact me if you are interested in my services. 
+                </p>
+            </div>
+
+            <div class=column2> 
+                <img src="./assets/images/portrait.jpg" alt="Portrait of Connor">
+            </div>
+
         </section>
-        <section id="projects">
-            <h2>
-                <a id="aprojects">Projects</a>
-            </h2>
-            <ul>
-                <li>Project 1</li>
-                <li>Project 2</li>
-                <li>Project 3</li>
-                <li>Project 4</li>
-            </ul>
+        <section id="work">
+            <h1 id="whitework">
+                Work
+            </h1>
+            <div class="allproj">
+                <div class="projectcard p1">
+                    <h2> Project 1</h2>
+                    <a href="https://gannacon.github.io/01_a11y/">
+                    <img src="./assets/images/htmlcsshw1.png" alt="screen grab of first homework">
+                    </a>
+                     <p>
+                        <h3>This was the first homework assignment for our boot camp class and utilized the following languages:</h3>
+                    </p>
+                    <ul>
+                        <li>
+                            HTML
+                        </li>
+                        <li>
+                            CSS
+                        </li>
+                    </ul>
+                </div>
+                <div class="projectcard p2">
+                    <h2> Project 2</h2>
+                    <a href="https://www.lsapa.com/">
+                    <img src="./assets/images/lsawebsite.png" alt="lsa website screen grab">
+                    </a>
+                    <p>
+                        <h3>This is the website for the firm I work for. Two years ago I fully redesigned LSA's website. to complete this project I used Squarespace while integrating the following languages:</h3>
+                    </p>
+                    <ul>
+                        <li>
+                            HTML
+                        </li>ß
+                        <li>
+                            CSS
+                        </li>
+                    </ul>
+                </div>
+                <div class="projectcard p3">
+                    <h2> Project 3</h2>
+                    <a href="https://www.connorgannaway.com/gallery">
+                        <img src="./assets/images/schoolhouse.jpeg" alt="schoolhouse photo">
+                    </a>
+                    <p>
+                        <h3>In my spare time im a photographer. This is my current gallery. I built this using Squarespace.</h3>
+                    </p>
+                </div>
+            </div>
         </section>
         <section id="contact-me">
-            <h2>
-                <a id="acontactme">Contact Me</a>Contact Me
-            </h2>
+            <h1>
+                Contact Me
+            </h1>
             <form>
                 <input type="text" placeholder="Name">
                 <input type="email" placeholder="Email">

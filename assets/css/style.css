@@ -1,14 +1,55 @@
+* {
+  box-sizing: border-box;
+}
 
 :root {
   --primary: rgb(203, 205, 202);
+  --secondary: rgba(13,13,13,1);
 }
 
 body {
     font-family: Comfortaa, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-nav{
+h1{
+  font-size: 45px;
+}
+
+h2{
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+
+header {
   background-color: var(--primary);
+  width: 100%;
+  height: 100px;
+  
+}
+
+header div img {
+  float: left;
+  max-height: 100px;
+  
+}
+
+header nav ul li a {
+  float: right;
+  padding: 0px 25px;
+  top: 40px;
+  display: inline-table;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  
+}
+header nav ul li a:hover {
+  color: grey;
+  transition: color 0.5s ease;
 }
 
 main{
@@ -16,27 +57,112 @@ main{
 }
 
 #about-me{
-  background-color: teal;
+  background: rgb(13,13,13);
+  background: linear-gradient(0deg, var(--secondary) 0%, var(--primary) 100%);
+  display: flex;
+  display: flex;
+  padding: 40px;
 }
 
-#projects{
-  background-color: orange;
+/* Left Column*/
+.column1 {
+  flex: 1; 
+}
+
+/* Right Column*/
+.column2 {
+  flex: 1;
+  text-align: center;
+}
+
+.column2 img{
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding: 5px;
+}
+
+#work {
+  background: rgb(13,13,13);
+  background: linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  padding: 40px;
+  color: white;
+}
+
+.allproj {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: black;
+  margin: 15px;
+}
+.projectcard {
+  background-color: white;
+  border: solid;
+  text-align: center;
+  padding: 20px;
+  flex: 0 0 400px;
+}
+
+.projectcard h2 {
+  border: solid;
+  border-radius: 15px;
+  border-color: grey;
+  padding:5%;
+}
+
+.projectcard.p1 img{
+  width: 70%;
+  padding: 15px;
+  flex: 3;
+}
+
+.projectcard.p2 img{
+  height: 200px;
+  padding: 15px;
+}
+
+.projectcard.p3 img{
+  width: 50%;
+  padding: 15px;
+}
+
+.projectcard ul li{
+  display: inline-block;
+  padding: 10px;
 }
 
 #contact-me{
-  background-color: red;
+  background: rgb(13,13,13);
+  background: linear-gradient(0deg, var(--secondary) 0%, var(--primary) 100%);
+  padding: 40px;
 }
 footer{
-  background-color: var(--primary);
+  background-color: var(--secondary);
+  color: white;
+  text-align: center;
+  padding: 100px;
 }
 
-@media screen and (min-width: 768px) {
+
+@media (max-width: 600px) {
   #about-me {
-    background-color: purple;
+    flex-direction: column;
+    flex-direction: column;
+  }
+  .column1{
+    text-align: center;
+  }
+  #work {
+    text-align: center;
+  }
+  #contact-me {
+    text-align: center;
   }
 }
-@media screen and (min-width: 480px) { 
-  #projects{
-    background-color: aqua;
-  }
-}
+
+
+
+
+
