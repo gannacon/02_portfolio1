@@ -64,7 +64,6 @@ header nav ul li a:hover {
   background: rgb(13,13,13);
   background: linear-gradient(0deg, var(--secondary) 0%, var(--primary) 100%);
   display: flex;
-  display: flex;
   padding: 40px;
 }
 
@@ -129,12 +128,12 @@ header nav ul li a:hover {
 }
 
 .projectcard.p2 img{
-  height: 100px;
+  WIDTH: 250px;
   padding: 15px;
 }
 
 .projectcard.p3 img{
-  width: 40%;
+  width: 350px;
   padding: 15px;
 }
 
